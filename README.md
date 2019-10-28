@@ -426,5 +426,4 @@ Untuk mengetesnya dapat dilakukan dengan cara ping dari client ke IP tujuan atau
 
 ### Latihan!
 
-
-
+ini soalnya
