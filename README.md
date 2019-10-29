@@ -299,7 +299,7 @@ Silakan buat topologi menggunakan **Cisco Packet Tracer**. Untuk menambahkan Rou
 
 -   jika terdapat peringatan (_alert_) ketika menyambungkan kabel antar device, tambahkan port pada router terlebih dahulu.
 
-![Gambar](gambar/25.png)
+![Gambar](gambar/Venusaur4.PNG)
 
 Pada UML, buatlah topologi tersebut seperti yang telah diajarkan pada [modul pengenalan UML](https://github.com/rohanaq/Modul-Pengenalan-UML) dengan **catatan** setiap _device_ yang akan terhubung **harus** dihubungkan menggunakan _**switch**_.
 
