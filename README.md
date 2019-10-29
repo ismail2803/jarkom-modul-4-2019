@@ -301,7 +301,7 @@ Silakan buat topologi menggunakan **Cisco Packet Tracer**. Untuk menambahkan Rou
 
 ![Gambar](gambar/Venusaur4.PNG)
 
-Pada UML, buatlah topologi tersebut seperti yang telah diajarkan pada [modul pengenalan UML](https://github.com/rohanaq/Modul-Pengenalan-UML) dengan **catatan** setiap _device_ yang akan terhubung **harus** dihubungkan menggunakan _**switch**_.
+Pada UML, buatlah topologi tersebut seperti yang telah diajarkan pada [modul pengenalan UML](https://github.com/afrchmdi/Jarkom-Modul-Pengenalan-UML) dengan **catatan** setiap _device_ yang akan terhubung **harus** dihubungkan menggunakan _**switch**_.
 
 
 #### 2) Subnetting
@@ -318,15 +318,15 @@ Pada UML, buka /etc/network/interfaces untuk mengatur interface pada setiap pera
 
 Pada CPT, interface dapat diatur pada menu **Config** > **INTERFACE** > **“nama interface”** (contoh: FastEthernet0/0). Isi alamat IP dan subnet mask dari subnet interface tersebut. Berikut contoh untuk mengatur IP pada subnet **A4**.
 
-Atur IP pada interface (nama UML nya) yang mengarah ke (nama UML nya) dengan **192.168.1.5**.
+Atur IP pada interface PIKACHU yang mengarah ke VENUSAUR dengan **192.168.1.5**.
 
 ![Gambar](gambar/Pikachu.PNG)
 
-Atur IP pada interface (nama UML nya) yang mengarah ke (nama UML nya) dengan **192.168.1.6**.
+Atur IP pada interface VENUSAUR yang mengarah ke PIKACHU dengan **192.168.1.6**.
 
 ![Gambar](gambar/Venusaur.PNG)
 
-Selanjutnya atur IP pada subnet A3. Atur IP pada interface (nama UML nya) yang mengarah ke _client_ dengan **192.168.1.65**.
+Selanjutnya atur IP pada subnet A3. Atur IP pada interface VENUSAUR yang mengarah ke _client_ dengan **192.168.1.65**.
 
 ![Gambar](gambar/Venusaur2.PNG)
 
@@ -344,11 +344,11 @@ Lakukan hal yang sama untuk mengatur alamat IP setiap _**interface**_ pada devic
 
 #### 3) Routing
 
-Pada CPT, _**Routing**_ dapat dilakukan pada menu **Config** > **Routing** > **Static** pada device **Router**. Lalu isi **Static Routes** seperti gambar dibawah pada (nama UML nya) dan tekan tombol **Add**
+Pada CPT, _**Routing**_ dapat dilakukan pada menu **Config** > **Routing** > **Static** pada device **Router**. Lalu isi **Static Routes** seperti gambar dibawah pada PIKACHU dan tekan tombol **Add**
 
 ![Gambar](gambar/Pikachu2.PNG)
 
-Pada _static routing_ juga dibutuhkan _**default routing**_ agar router dapat mengirimkan paket sesuai dengan tujuan. Default routing dibutuhkan untuk router yang berada di bawah router utama (router yang terhubung internet), contohnya (nama UML nya)
+Pada _static routing_ juga dibutuhkan _**default routing**_ agar router dapat mengirimkan paket sesuai dengan tujuan. Default routing dibutuhkan untuk router yang berada di bawah router utama (router yang terhubung internet), contohnya VENUSAUR
 
 ![Gambar](gambar/Venusaur3.PNG)
 
@@ -356,7 +356,7 @@ _**Keterangan**_ :
 
 1.  Network 192.168.1.64 adalah Network ID yang akan dihubungkan
 2.  Mask 255.255.255.192 adalah netmask dari subnet A3
-3.  Next Hop 192.168.1.65 (disebut **gateway**), adalah IP yang dituju ketika ingin menuju subnet poin 1, yaitu interface pada (nama UML nya) yang mengarah ke Pikachu
+3.  Next Hop 192.168.1.65 (disebut **gateway**), adalah IP yang dituju ketika ingin menuju subnet poin 1, yaitu interface pada VENUSAUR yang mengarah ke PIKACHU
 
 Pada **UML**, _routing_ dilakukan pada device _**router**_ dengan perintah :
 
@@ -374,7 +374,7 @@ route -n
 
 Maka sekarang, (nama UML nya) dan _host_ pada (nama UML nya) sudah saling terhubung. Agar semua subnet dapat saling terhubung, tambahkan _static routing_ berikut :
 
-1.  Pada Pikachu
+1.  Pada PIKACHU
     
     ```
      Network 192.168.1.128 Netmask 255.255.255.128 Next Hop 192.168.1.6
@@ -385,21 +385,21 @@ Maka sekarang, (nama UML nya) dan _host_ pada (nama UML nya) sudah saling terhub
     
     ```
     
-2.  Pada (nama UML nya)
+2.  Pada VENUSAUR
     
     ```
      Network 192.168.1.128 Netmask 255.255.255.128 Next Hop 192.168.1.2
     
     ```
     
-3.  Pada (nama UML nya)
+3.  Pada CHARIZAD
     
     ```
      Network 0.0.0.0 Netmask 0.0.0.0 Next Hop 192.168.1.1
     
     ```
     
-4.  Pada (nama UML nya)
+4.  Pada BLASTOISE
     
     ```
      Network 0.0.0.0 Netmask 0.0.0.0 Next Hop 192.168.1.9
@@ -408,7 +408,7 @@ Maka sekarang, (nama UML nya) dan _host_ pada (nama UML nya) sudah saling terhub
     
     ```
     
-5.  Pada (nama UML nya)
+5.  Pada ARCEUS
     
     ```
      Network 0.0.0.0 Netmask 0.0.0.0 Next Hop 192.168.1.13
@@ -422,7 +422,7 @@ Maka sekarang, (nama UML nya) dan _host_ pada (nama UML nya) sudah saling terhub
 
 Untuk mengetesnya dapat dilakukan dengan cara ping dari client ke IP tujuan atau menggunakan tombol dengan ikon surat pada _toolbar_.
 
-![Gambar](gambar/35.png)
+![Gambar](gambar/35.PNG)
 
 ### Latihan!
 
