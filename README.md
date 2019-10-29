@@ -162,11 +162,11 @@ Pembagian IP dengan menggunakan metode ini didasarkan pada pembagian class pada 
 
 Contoh penerapan pembagian alamat IP dengan metode _**Classful**_ sebagai berikut.
 
-![Gambar](gambar/Gambar1.png)
+![Gambar](gambar/Gambar1.PNG)
 
 Anggap kita memiliki topologi jaringan seperti gambar di atas. Lalu, tentukan jumlah subnet yang ada di dalam topologi tersebut.
 
-![Gambar](gambar/Gambar2.png)
+![Gambar](gambar/Gambar2.PNG)
 
 Terdapat 8 subnet di dalam topologi. Dengan menggunakan teknik classful setiap subnet akan memiliki netmask /24 karena semua subnet memiliki jumlah host di bawah 256. Sehingga pembagian IP yang memungkinkan untuk topologi di atas adalah sebagai berikut.
 
@@ -213,7 +213,7 @@ Berdasarkan total IP dan netmask yang dibutuhkan, maka kita dapat menggunakan ne
 
 Dari pohon dari pohon tersebut akan mendapat pembagian IP sebagai berikut.
 
-![Gambar](gambar/11.png)
+![Gambar](gambar/11.PNG)
 
 ##### 2. CIDR (Classless Inter Domain Routing)
 
@@ -221,11 +221,11 @@ Perhitungan pada teknik CIDR juga didasarkan pada jumlah komputer/ host yang ada
 
 **Langkah 1** - Tentukan subnet yang ada dalam topologi dan lakukan _labelling_ netmask terhadap masing-masing subnet. Contohnya dapat dilihat pada gambar berikut.
 
-![Gambar](gambar/Gambar2.png)
+![Gambar](gambar/Gambar2.PNG)
 
 Langkah 2 - Gabungkan subnet paling bawah di dalam topologi. Paling bawah berarti subnet yang paling jauh dari internet (gambar awan). Maka pada topologi yang digunakan kali ini, subnet yang dapat digabungkan adalah A1 dengan A2 dan subnet A7 dengan A8. Subnet yang digabung tersebut akan membentuk sebuah subnet lebih besar dari subnet-subnet kecil yang ada di dalamnya. 
 
-![Gambar](gambar/Gambar3.png)
+![Gambar](gambar/Gambar3.PNG)
 
 Subnet **B1** merupakan hasil penggabungan dari subnet **A1** dan **A2**, Subnet **B2** merupakan hasil penggabungan dari subnet **A7** dan **A8**.
 
@@ -235,15 +235,15 @@ Perhatikan subnet **A1** dan **A2**. Subnet **A1** memiliki netmask /25, dan sub
 
 Lalu ulangi langkah tersebut sampai menjadi sebuah subnet besar yang mencakup 1 topologi yang kita miliki.
 
-![Gambar](gambar/Gambar4.png)
-![Gambar](gambar/Gambar5.png)
-![Gambar](gambar/Gambar6.png)
+![Gambar](gambar/Gambar4.PNG)
+![Gambar](gambar/Gambar5.PNG)
+![Gambar](gambar/Gambar6.PNG)
 
 **Langkah 3** - Dari proses penggabungan yang telah dilakukan, didapatkan sebuah subnet besar dengan netmask **/21**. Kali ini dapat menggunakan NID **192.168.0.0**, netmask **255.255.248.0**.
 
 **Langkah 4** - Hitung pembagian IP dengan pohon berdasarkan penggabungan subnet yang telah dilakukan.
 
-![Gambar](gambar/17.png)
+![Gambar](gambar/17.PNG)
 
 > **Catatan**
 
@@ -251,7 +251,7 @@ Lalu ulangi langkah tersebut sampai menjadi sebuah subnet besar yang mencakup 1 
 
 **Langkah 5** - Berdasarkan penghitungan, maka didapatkan pembagian IP sebagai berikut.
 
-![Gambar](gambar/18.png)
+![Gambar](gambar/18.PNG)
 
 Jika kalian menggunakan CIDR maka netmask yang terbentuk akan menjadi lebih besar dibandingkan dengan menggunakan VLSM. Tetapi salah satu **keunggulan** teknik **CIDR** adalah ketika terdapat subnet baru yang ditambahkan dalam topologi, **tidak perlu melakukan penghitungan kembali** karena kemungkinan besar masih ada interval (_range_) IP yang tidak terpakai. Selain itu, teknik CIDR juga mengefisienkan _routing_ karena umumnya tabel routing yang dimiliki lebih sederhana dibandingkan teknik VLSM.
 
@@ -273,7 +273,7 @@ Buka aplikasi Cisco Packet Tracer, kita akan membuat topologi baru.
 
 #### 1) Membuat Topologi
 
-![Gambar](gambar/Gambar1.png)
+![Gambar](gambar/Gambar1.PNG)
 
 Silakan buat topologi menggunakan **Cisco Packet Tracer**. Untuk menambahkan Router, Switch, dan PC dapat dilakukan dengan _drag and drop_ yang ada pada menu. Pada praktik kali ini, sesuaikan _device_ dengan pilihan dengan kotak merah pada gambar di bawah
 
@@ -308,7 +308,7 @@ Pada UML, buatlah topologi tersebut seperti yang telah diajarkan pada [modul pen
 
 Praktik kali ini akan menerapkan cara routing untuk teknik _subnetting_ **VLSM** yang telah kita lakukan sebelumnya.
 
-![Gambar](gambar/Gambar2.png)
+![Gambar](gambar/Gambar2.PNG)
 
 ![Gambar](gambar/27.png)
 
@@ -320,15 +320,15 @@ Pada CPT, interface dapat diatur pada menu **Config** > **INTERFACE** > **“nam
 
 Atur IP pada interface (nama UML nya) yang mengarah ke (nama UML nya) dengan **192.168.1.5**.
 
-![Gambar](gambar/Piakchu.png)
+![Gambar](gambar/Pikachu.PNG)
 
 Atur IP pada interface (nama UML nya) yang mengarah ke (nama UML nya) dengan **192.168.1.6**.
 
-![Gambar](gambar/Venusaur.png)
+![Gambar](gambar/Venusaur.PNG)
 
 Selanjutnya atur IP pada subnet A3. Atur IP pada interface (nama UML nya) yang mengarah ke _client_ dengan **192.168.1.65**.
 
-![Gambar](gambar/Venusaur2.png)
+![Gambar](gambar/Venusaur2.PNG)
 
 Atur IP pada _client_ (nama UML nya) dengan cara :
 
@@ -346,11 +346,11 @@ Lakukan hal yang sama untuk mengatur alamat IP setiap _**interface**_ pada devic
 
 Pada CPT, _**Routing**_ dapat dilakukan pada menu **Config** > **Routing** > **Static** pada device **Router**. Lalu isi **Static Routes** seperti gambar dibawah pada (nama UML nya) dan tekan tombol **Add**
 
-![Gambar](gambar/Pikachu2.png)
+![Gambar](gambar/Pikachu2.PNG)
 
 Pada _static routing_ juga dibutuhkan _**default routing**_ agar router dapat mengirimkan paket sesuai dengan tujuan. Default routing dibutuhkan untuk router yang berada di bawah router utama (router yang terhubung internet), contohnya (nama UML nya)
 
-![Gambar](gambar/Venusaur3.png)
+![Gambar](gambar/Venusaur3.PNG)
 
 _**Keterangan**_ :
 
