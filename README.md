@@ -336,9 +336,9 @@ Atur IP pada _client_ (nama UML nya) dengan cara :
 -   Pilih tab Desktop
 -   Pilih IP Configuration
 
-![Gambar](gambar/31.png)
+![Gambar](gambar/Klien1.PNG)
 
-![Gambar](gambar/32.png)
+![Gambar](gambar/Klien2.PNG)
 
 Lakukan hal yang sama untuk mengatur alamat IP setiap _**interface**_ pada device yang ada dalam topologi. Setelah selesai, lakukan langkah selanjutnya yaitu _**Routing**_ agar topologi dapat berfungsi dengan semestinya.
 
