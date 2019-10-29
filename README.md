@@ -170,7 +170,7 @@ Anggap kita memiliki topologi jaringan seperti gambar di atas. Lalu, tentukan ju
 
 Terdapat 8 subnet di dalam topologi. Dengan menggunakan teknik classful setiap subnet akan memiliki netmask /24 karena semua subnet memiliki jumlah host di bawah 256. Sehingga pembagian IP yang memungkinkan untuk topologi di atas adalah sebagai berikut.
 
-![Gambar](gambar/8.png)
+![Gambar](gambar/8.PNG)
 
 #### B. Classless
 
