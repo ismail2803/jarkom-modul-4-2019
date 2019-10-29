@@ -324,9 +324,9 @@ Atur IP pada _client_ (nama UML nya) dengan cara :
 -   Pilih tab Desktop
 -   Pilih IP Configuration
 
-![Gambar](gambar/Klien1.PNG)
+![Gambar](gambar/Klien1.png)
 
-![Gambar](gambar/Klien2.PNG)
+![Gambar](gambar/Klien2.png)
 
 Lakukan hal yang sama untuk mengatur alamat IP setiap _**interface**_ pada device yang ada dalam topologi. Setelah selesai, lakukan langkah selanjutnya yaitu _**Routing**_ agar topologi dapat berfungsi dengan semestinya.
 
@@ -414,4 +414,6 @@ Untuk mengetesnya dapat dilakukan dengan cara ping dari client ke IP tujuan atau
 
 ### Latihan!
 
-ini soalnya
+![Gambar](gambar/Latihan.PNG)
+
+Implementasikan subnetting dan routing topologi di atas pada Cisco Packet Tracer dan UML menggunakan teknik subnetting yang berbeda! Contoh pada Cisco Packet Tracer menggunakan CIDR, pada UML menggunakan VLSM atau sebaliknya. (Untuk UML, tiap subnet diwakili satu client/komputer saja)
