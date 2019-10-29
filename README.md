@@ -93,19 +93,19 @@ Berikut akan dijelaskan bagaimana mencari NID, Broadcast Address, dan Available 
 
 Mencari Network ID (NID)
 
-![Gambar](gambar/2.png)
+![Gambar](gambar/2.PNG)
 
 #### Broadcast Address
 
 Mencari Broadcast Address
 
-![Gambar](gambar/3.png)
+![Gambar](gambar/3.PNG)
 
 #### Available Hosts
 
 Mencari rentang alamat IP
 
-![Gambar](gambar/4.png)
+![Gambar](gambar/4.PNG)
 
 ### IP Publik dan IP Privat
 
@@ -124,7 +124,7 @@ Rentang IP Publik adalah selain rentang IP Privat di atas.
 
 ### Let’s Wrap and Warm Up!
 
-![Gambar](gambar/5.png)
+![Gambar](gambar/5.PNG)
 
 
 **Mari Diskusi**
