@@ -9,7 +9,6 @@
         -   [Broadcast Address](#broadcast-address)
         -   [Available Hosts](#available-hosts)
     -   [IP Publik dan IP Privat](#ip-publik-dan-ip-privat)
-    -   [Let’s Wrap and Warm Up!](#let's-wrap-and-warm-up)
 -   [B. SUBNETTING](#b-subnetting)
     -   [Pengertian](#pengertian)
     -   [Perhitungan Subnet](#perhitungan-subnet)
@@ -121,17 +120,6 @@ Rentang IP Privat :
 -   192.168.0.0/16 (Class C)
 
 Rentang IP Publik adalah selain rentang IP Privat di atas.
-
-### Let’s Wrap and Warm Up!
-
-![Gambar](gambar/5.PNG)
-
-
-**Mari Diskusi**
-
-1.  Carilah Network ID, Broadcast Address dan rentang alamat IP dari 172.16.1.27/29
-2.  Apakah IP 10.151.36.5/24 dan 10.151.36.128/24 berada dalam satu subnet? Sebutkan alasannya.
-3.  Apakah IP 10.151.252.5/22 dan 10.151.253.10/22 berada dalam satu subnet? Sebutkan alasannya.
 
 ## B. SUBNETTING
 
